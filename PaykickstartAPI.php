@@ -131,6 +131,6 @@ class PaykickstartAPI {
 
     public function license_key_is_invalid($license_key)
     {
-        return $this->license_is_valid($license_key) ? false : true;
+        return !$this->license_is_valid($license_key);
     }
 }
